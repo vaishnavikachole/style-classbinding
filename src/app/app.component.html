@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Class binding using ngClass Directive</h2>
+  <div class="card" style="width: 300px;" [ngClass]=" 'colorChange bgColor singleCssColorChange' ">
+         Hello....Good Morning
+  </div>
+  <br>
+  <div class="card" style="width: 300px;" [ngClass]="multiCssClasses">
+    Have a good Day.....
+</div>
+<h2>Style binding using ngStyle Directive</h2>
+<div class="card" style="width: 300px;" [ngStyle]= "{
+  'color' : 'red',
+  'backgroundColor' : 'black' ,
+  'font-weight' : 'bold'
+}">
+  This one is for inline css style
+</div>
+<br>
+<!-- another way of adding style -->
+<div class="card" style="width: 300px;" [ngStyle]= "inlineCssStyle">
+  This one is for inline css style
+</div>
+</div>
